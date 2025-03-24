@@ -6,7 +6,7 @@
 ;; else the levels would be rendered unusable.
 ;;
 ;; Some notes on editing this file:
-;;  - tile-ids must be uniq
+;;  - tile-ids must be unique
 ;;  - the tile definition with the largest id should always be at the
 ;;    bottom of the file
 ;;  - when creating a new tile definition take the greatest current id
@@ -130,16 +130,24 @@
   )
 
 (tilegroup
-    (name "Forest (Underground)")
+    (name "Jungle 1")
     (tiles
       1860 1861 1862 1863
       1864 1865 1866 1867
       1868 1869 1870 1871
       1872 1873 1874 1875
       1876 1877 1879 1880
+      2182 2183 2190 0
+      2184 2185 2191 2192
+      2186 2187 2193 2194
+      2188 2189 2195 2196
       0    1890 1891 0
       1892 1893 1894 1895
       1896 1897 1898 1899
+      2168 2169 2174 2175
+      2170 2171 2176 2177
+      2172 2173 2178 2179
+      0    0    2180 2181
       1900 1901 1902 1903
       1904 1905 1906 1907
       1908 1909 1910 1911
@@ -326,6 +334,16 @@
     )
   )
   (tilegroup
+    (name "Industrial")
+    (tiles
+      2154 2155 2156 0
+      2157 2158 2159 0
+      2160 2161 2162 0
+      2163 2164 0    0
+      2165 2167 0    0
+    )
+  )
+  (tilegroup
     (name "Stone Brick Walls")
     (tiles
       64   65   66   67
@@ -388,13 +406,14 @@
       1824 1825 0    0)
   )
   (tilegroup
-    (name "Jungle")
+    (name "Jungle 2")
     (tiles
-      301 302 303 0
-      304 305 306 0
-      307 308 309 0
-      311 310 0   0
-      312 0   0   0
+      301  302  303 0
+      304  305  306 0
+      307  308  309 0
+      2197 2198 0   0
+      311  310  0   0
+      312  0    0   0
     )
   )
   (tilegroup
@@ -2171,11 +2190,13 @@
   )
   (tiles
     (width 2)
-    (height 1)
+    (height 2)
     (ids
-      311 310
+      2197 2198
+      311  310
     )
     (attributes
+      1 1
       1 1
     )
     (image "tiles/jungle/concave.png")
@@ -6309,19 +6330,19 @@
   (tile
     (id 1890)
     (images
-      (region "tiles/forest/underground/groundtiles-7.png" 32 0 32 32)
+      (region "tiles/forest/underground/slope-1.png" 32 0 32 32)
     )
   )
   (tile
     (id 1891)
     (images
-      (region "tiles/forest/underground/groundtiles-7.png" 64 0 32 32)
+      (region "tiles/forest/underground/slope-1.png" 64 0 32 32)
     )
   )
   (tile
     (id 1892)
     (images
-      (region "tiles/forest/underground/groundtiles-7.png" 0 32 32 32)
+      (region "tiles/forest/underground/slope-1.png" 0 32 32 32)
     )
     (solid #t)
     (slope-type 18)
@@ -6330,7 +6351,7 @@
   (tile
     (id 1893)
     (images
-      (region "tiles/forest/underground/groundtiles-7.png" 32 32 32 32)
+      (region "tiles/forest/underground/slope-1.png" 32 32 32 32)
     )
     (solid #t)
     (slope-type 34)
@@ -6339,7 +6360,7 @@
   (tile
     (id 1894)
     (images
-      (region "tiles/forest/underground/groundtiles-7.png" 64 32 32 32)
+      (region "tiles/forest/underground/slope-1.png" 64 32 32 32)
     )
     (solid #t)
     (slope-type 32)
@@ -6348,7 +6369,7 @@
   (tile
     (id 1895)
     (images
-      (region "tiles/forest/underground/groundtiles-7.png" 96 32 32 32)
+      (region "tiles/forest/underground/slope-1.png" 96 32 32 32)
     )
     (solid #t)
     (slope-type 16)
@@ -6357,28 +6378,28 @@
   (tile
     (id 1896)
     (images
-      (region "tiles/forest/underground/groundtiles-7.png" 0 64 32 32)
+      (region "tiles/forest/underground/slope-1.png" 0 64 32 32)
     )
     (solid #t)
   )
   (tile
     (id 1897)
     (images
-      (region "tiles/forest/underground/groundtiles-7.png" 32 64 32 32)
+      (region "tiles/forest/underground/slope-1.png" 32 64 32 32)
     )
     (solid #t)
   )
   (tile
     (id 1898)
     (images
-      (region "tiles/forest/underground/groundtiles-7.png" 64 64 32 32)
+      (region "tiles/forest/underground/slope-1.png" 64 64 32 32)
     )
     (solid #t)
   )
   (tile
     (id 1899)
     (images
-      (region "tiles/forest/underground/groundtiles-7.png" 96 64 32 32)
+      (region "tiles/forest/underground/slope-1.png" 96 64 32 32)
     )
     (solid #t)
   )
@@ -6894,5 +6915,114 @@
     (editor-images "tiles/auxiliary/invisible-unisolid-editor.png")
   )
 
-;; next-id: 2154
+  (tiles
+    (width 3)
+    (height 3)
+    (ids 
+      2154 2155 2156
+      2157 2158 2159
+      2160 2161 2162
+    )
+    (attributes
+      1 1 1
+      1 1 1
+      1 1 1
+    )
+    (image "tiles/industrial/blocks.png")
+  )
+
+  (tiles
+    (width 2)
+    (height 2)
+    (ids 
+      2163 2164
+      2165 2167
+    )
+    (attributes
+      1 1
+      1 1
+    )
+    (image "tiles/industrial/metalplate.png")
+  )
+
+  (tiles
+    (width 2)
+    (height 3)
+    (ids 
+      2168 2169
+      2170 2171
+      2172 2173
+    )
+    (attributes
+      0  0
+      17 17
+      1  1
+    )
+    (datas
+      0 0
+      2 0
+      0 0
+    )
+    (image "tiles/forest/underground/slope-2.png")
+  )
+
+  (tiles
+    (width 2)
+    (height 4)
+    (ids 
+      2174 2175
+      2176 2177
+      2178 2179
+      2180 2181
+    )
+    (attributes
+      0  0
+      17 17
+      17 17
+      1  1
+    )
+    (datas
+      0  0
+      66 48
+      50 64
+      0 0
+    )
+    (image "tiles/forest/underground/slope-3.png")
+  )
+
+  (tiles
+    (width 2)
+    (height 4)
+    (ids 
+      2182 2183
+      2184 2185
+      2186 2187
+      2188 2189
+    )
+    (attributes
+      1 1
+      1 1
+      1 1
+      1 1
+    )
+    (image "tiles/forest/underground/convex.png")
+  )
+  (tiles
+    (width 2)
+    (height 4)
+    (ids 
+      2190 0
+      2191 2192
+      2193 2194
+      2195 2196
+    )
+    (attributes
+      0 0
+      1 1
+      1 1
+      1 1
+    )
+    (image "tiles/forest/underground/wall.png")
+  )
+;; next-id: 2174
 )
