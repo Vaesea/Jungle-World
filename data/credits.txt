@@ -6,7 +6,14 @@
 
   (text (_ "!images/engine/menu/logo.png
 
+	Sophie \"Vaesea\" Ball
+ Creator of Forgotten Jungle
 
+	Beau Buckley
+ Creator of Beach 01 from opengameart.org
+
+
+-SuperTux Credits
 
 	Bill Kendrick
 !images/credits/bill.jpg
@@ -91,15 +98,6 @@
 	CDROMs and FTP sites
 
 
--Voice Acting
-
-	Tux - Daniel Alston
-!images/credits/daniel.jpg
-
-	Penny - Mathilda Edmunds
-	Yeti - Matthias Braun
-
-
 -Translation
 
 	ca - Antoni Villalonga
@@ -129,15 +127,12 @@
 
 -Contact
 
-	Visit our webpage at
-*http://supertux.lethargik.org
+	No website yet
 
-	Or visit us directly at IRC:
-*#supertux at irc.freenode.net
+	Definitely no IRC
 
-	Comments, ideas and suggestions
-	go to our mailing list
-*supertux-devel@lists.lethargik.org
+	Issues, comments and ideas go
+	into the Github Repository
 
 
 
@@ -148,9 +143,9 @@
 	Thank you for
 	playing
 
--SuperTux
+-SuperTux: Forgotten Forest
 
 
 
-	Penny awaits you in Milestone 3!"))
+	Who was Penny again?"))
 )
