@@ -1,0 +1,6 @@
+(supertux-world
+  (title (_ "Forgotten Jungle"))
+  (description "World 3 - ForgottenJungle - levels")
+  (hide-from-contribs #f)
+  (levelset #f)
+)
