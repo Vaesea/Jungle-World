@@ -19,4 +19,4 @@ Treetop / Sky
 
 Temple - Only 1 level
 
-Castle - Final few levels
+Castle - Final 3 levels
